@@ -1,0 +1,322 @@
+:root {
+    --myGreen: #067A46;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.header {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .NavLink {
+        display: flex;
+        gap: 20px;
+    }
+    .links {
+        color: #212121;
+    }
+    .active {
+        color: var(--myGreen)    ;
+    }
+}
+
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ------------------- BUTTON CLASS ----------------- */
+
+.greenBorderBtn {
+    color: var(--myGreen);
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid var(--myGreen);
+}
+
+.bgGreen {
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    /* padding: 10px 20px; */
+    background-color: var(--myGreen);
+}
+
+.outlined {
+    width: 100%;
+}
+
+
+/* ------------------ ICONS CLASS ------------------- */
+
+.chevronCircleDown {
+    color: #fff;
+    font-size: 45px;
+    margin-top: 20px;
+    width: min-content;
+    border-radius: 50%;
+    border: 1px solid var(--myGreen);
+    background-color: var(--myGreen);
+}
+
+.chevronCircleDown-question {
+    color: #fff;
+    font-size: 30px;
+    width: min-content;
+    border-radius: 50%;
+    border: 1px solid #212121;
+    background-color: #212121;
+}
+
+/* ------------------ HELLO FRESH HOME--------------- */
+
+.helloFlesh {
+    width: 294px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+
+
+    h2 {
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 60px;
+        color: #000;
+    }
+
+    p {
+        font-size: 20px;
+        color: #343434;
+    }
+}
+
+
+/* --------------------- CARDS COMPONENTS ------------- */
+
+.cards {
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.inner-card {
+    gap: 30px;
+    display: flex;
+    padding: 10px;
+    margin: 30px 0;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+/* ------------------- WHY HELLO FRESH? ----------------- */
+
+.whyHelloSection {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #F8F8F8;
+    margin: 15px 0;
+}
+
+
+/* ------------------ WHAT INSIDE EACH BOX ---------------------- */
+
+.whatBoxContainer {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.whatInsideEachBox {
+    width: 90%;
+    gap: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.eacBox-rightContainer {
+    text-align: center;
+}
+
+.insideBox {
+    width: 350px;
+    font-size: 17px;
+    text-align: left;
+    line-height: 26px;
+    margin-bottom: 30px;
+
+    p:hover {
+        color: var(--myGreen);
+        text-decoration: underline;
+    }
+}
+
+
+
+
+/* --------------------- CAROUSEL CONTAINER ---------------------- */
+
+.items-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+
+.carousel-inner {
+    height: 50vh;
+    position: relative;
+}
+
+.carousel-inner h4{
+    position: absolute;
+    bottom: 50px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.carousel-inner span {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: var(--myGreen);
+}
+
+.carouselImage {
+    position: absolute;
+    height: 50vh;
+    border: 1px soldi green;
+    z-index: -1;
+}
+
+.container-global {
+    display: grid;
+    justify-items: center;
+    border: 1px solid #ddd;
+    padding: 40px 0;
+
+    h2 {
+        margin-bottom: 5px;
+        font-weight: 200;
+        font-size: 35px;
+    }
+}
+
+
+/* ----------------COOK IT, LOVE IT ----------------- */
+
+.cookItLoveIt {
+    display: grid;
+    margin: auto;
+    padding-top: 40px;
+    justify-items: center;
+
+
+    h2 {
+        margin-bottom: 20px;
+        font-weight: 200;
+        font-size: 35px;
+    }
+}
+
+.loveIt {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cookIt {
+    width: 250px;
+
+    img {
+        width: 100%;
+    }
+
+    h4 {
+        font-weight: 100;
+        font-size: 14px;
+    }
+}
+
+
+/* --------------- FLEXIBLE PLAN --------------- */
+
+.inner-flexible-container {
+    display: grid;
+    gap: 30px;
+
+    h2 {
+        font-weight: 200;
+        font-size: 35px;
+    }
+}
+
+/* -------------------MORE QUESTION? --------------- */
+
+.question {
+    background-color: #F8F8F8;
+    padding: 30px;
+}
+.question-title {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    h2 {
+        font-weight: 200;
+        font-size: 35px;
+    }
+}
+
+.questionInner {
+    display: flex;
+    padding-left: 100px;
+    justify-content: left;
+}
+
+.questionInner p {
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
